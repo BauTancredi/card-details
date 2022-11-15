@@ -18,15 +18,15 @@
 * {
   margin: 0;
   padding: 0;
-}
-* {
+
   box-sizing: border-box;
 }
+
 body {
+  background-color: var(--color-white);
+
+  color: var(--color-veryDarkViolet);
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
-  background-color: var(--color-white);
-  color: var(--color-veryDarkViolet);
-
   letter-spacing: 1px;
 }

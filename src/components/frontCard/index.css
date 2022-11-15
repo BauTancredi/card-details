@@ -1,21 +1,51 @@
 .frontCard {
-  width: 286px;
-  height: 157px;
-  border-radius: 10px;
   position: absolute;
   bottom: -40px;
   left: 20px;
+
+  width: 286px;
+  height: 157px;
+  border-radius: 10px;
+
   background-image: url("../../images/bg-card-front.png");
   background-size: cover;
 }
 
-.cardLogo {
+.cardInfo {
   position: relative;
 }
 
-.cardLogo img {
+.cardInfo img {
   position: absolute;
   top: 20px;
   left: 20px;
+
   width: 54px;
+}
+
+.cardDetails {
+  position: absolute;
+  top: 80px;
+
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+.cardNumber {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  letter-spacing: 2.2px;
+}
+
+.cardDetails--HolderExpiry {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 9px;
+  text-transform: uppercase;
 }

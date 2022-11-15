@@ -1,10 +1,21 @@
 .backCard {
-  width: 286px;
-  height: 157px;
-  border-radius: 10px;
   position: absolute;
   top: 30px;
   right: 20px;
+
+  width: 286px;
+  height: 157px;
+  border-radius: 10px;
+
   background-image: url("../../images/bg-card-back.png");
   background-size: cover;
+}
+
+.cvc {
+  position: absolute;
+  top: 71px;
+  right: 30px;
+
+  font-size: 9px;
+  color: var(--color-white);
 }
