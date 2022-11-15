@@ -24,8 +24,9 @@ input {
   height: 45px;
   padding-left: 15px;
 
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-family: "Space Grotesk", sans-serif;
+  outline: none;
 }
 
 input:focus {
@@ -68,6 +69,15 @@ input:focus {
 
 .disabled {
   background-color: var(--color-lightGrayishViolet);
+}
+
+.error {
+  color: red !important;
+  font-size: 0.7rem;
+}
+
+.errorInput {
+  border-color: red;
 }
 
 @media only screen and (min-width: 768px) {
