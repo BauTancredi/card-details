@@ -3,7 +3,7 @@
 
   height: 240px;
 
-  background-image: url("./images/bg-main-mobile.png");
+  background-image: url("/public/images/bg-main-mobile.webp");
   background-size: cover;
 }
 
@@ -16,7 +16,7 @@
     height: 100vh;
     width: 45%;
 
-    background-image: url("./images/bg-main-desktop.png");
+    background-image: url("/public/images/bg-main-desktop.webp");
     background-size: cover;
   }
 }

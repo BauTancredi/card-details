@@ -7,7 +7,7 @@
   height: 157px;
   border-radius: 10px;
 
-  background-image: url("../../images/bg-card-back.png");
+  background-image: url("/public/images/bg-card-back.webp");
   background-size: cover;
 }
 
