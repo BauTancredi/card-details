@@ -6,3 +6,17 @@
   background-image: url("./images/bg-main-mobile.png");
   background-size: cover;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .cardsContainer {
+    height: 100vh;
+    width: 45%;
+
+    background-image: url("./images/bg-main-desktop.png");
+    background-size: cover;
+  }
+}

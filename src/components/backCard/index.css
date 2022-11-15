@@ -19,3 +19,21 @@
   font-size: 0.9rem;
   color: var(--color-white);
 }
+
+@media only screen and (min-width: 768px) {
+  .backCard {
+    top: 350px;
+    left: 200px;
+
+    width: 401px;
+    height: 220px;
+  }
+
+  .cvc {
+    position: absolute;
+    top: 99px;
+    right: 50px;
+
+    font-size: 0.9rem;
+  }
+}

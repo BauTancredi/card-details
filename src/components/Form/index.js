@@ -4,8 +4,8 @@ import "./index.css";
 
 const Form = () => {
   return (
-    <div>
-      <form className="formContainer">
+    <div className="formContainer">
+      <form>
         <div className="formContainer--input">
           <label htmlFor="cardNumber">Card Number</label>
           <input
