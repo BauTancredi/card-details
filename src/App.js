@@ -1,5 +1,6 @@
-import BackCard from "./components/backCard";
-import FrontCard from "./components/frontCard";
+import BackCard from "./components/BackCard";
+import FrontCard from "./components/FrontCard";
+import Form from "./components/Form";
 
 import "./App.css";
 
@@ -11,7 +12,7 @@ function App() {
           <BackCard />
           <FrontCard />
         </div>
-        <div className="formContainer">test</div>
+        <Form />
       </div>
     </div>
   );
