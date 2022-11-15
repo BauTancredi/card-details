@@ -1,0 +1,21 @@
+.frontCard {
+  width: 286px;
+  height: 157px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  background-image: url("../../images/bg-card-front.png");
+  background-size: cover;
+}
+
+.cardLogo {
+  position: relative;
+}
+
+.cardLogo img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 54px;
+}

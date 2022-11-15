@@ -1,0 +1,10 @@
+.backCard {
+  width: 286px;
+  height: 157px;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-image: url("../../images/bg-card-back.png");
+  background-size: cover;
+}
