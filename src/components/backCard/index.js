@@ -2,10 +2,19 @@ import React from "react";
 
 import "./index.css";
 
-const BackCard = () => {
+const BackCard = ({ cardCVC }) => {
+  // render cardCVC or placeholder
+  const renderCardCVC = () => {
+    if (cardCVC) {
+      return cardCVC;
+    } else {
+      return "000";
+    }
+  };
+
   return (
     <div className="backCard">
-      <p className="cvc">000</p>
+      <p className="cvc">{renderCardCVC()}</p>
     </div>
   );
 };
