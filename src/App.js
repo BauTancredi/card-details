@@ -1,6 +1,7 @@
 import BackCard from "./components/BackCard";
 import FrontCard from "./components/FrontCard";
 import Form from "./components/Form";
+import FormComplete from "./components/FormComplete";
 
 import "./App.css";
 
@@ -12,7 +13,8 @@ function App() {
           <BackCard />
           <FrontCard />
         </div>
-        <Form />
+        {/* <Form /> */}
+        <FormComplete />
       </div>
     </div>
   );
