@@ -32,13 +32,12 @@
   padding-right: 15px;
 
   color: var(--color-white);
-  font-size: 14px;
 }
 
 .cardNumber {
   margin-bottom: 15px;
 
-  font-size: 18px;
+  font-size: 1.2rem;
   letter-spacing: 2.2px;
 }
 
@@ -46,6 +45,6 @@
   display: flex;
   justify-content: space-between;
 
-  font-size: 9px;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
