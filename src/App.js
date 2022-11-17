@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import BackCard from "./components/BackCard";
 import FrontCard from "./components/FrontCard";
 import Form from "./components/Form";
-import FormComplete from "./components/FormComplete";
 
 import "./App.css";
 
