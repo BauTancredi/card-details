@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import BackCard from "./components/BackCard";
 import FrontCard from "./components/FrontCard";
@@ -7,54 +7,18 @@ import FormComplete from "./components/FormComplete";
 
 import "./App.css";
 
+export const FormInitialValues = {
+  cardNumber: "",
+  cardHolder: "",
+  cardExpiry: {
+    month: "",
+    year: "",
+  },
+  cardCVC: "",
+};
+
 function App() {
-  const [formComplete, setFormComplete] = React.useState(false);
-  const [formValues, setFormValues] = React.useState({
-    cardNumber: "",
-    cardHolder: "",
-    cardExpiry: {
-      month: "",
-      year: "",
-    },
-    cardCVC: "",
-  });
-
-  // render the form or the completed form based on the formComplete state
-  const renderForm = () => {
-    if (formComplete) {
-      return (
-        <FormComplete formValues={formValues} handleSubmit={handleSubmit} />
-      );
-    } else {
-      return (
-        <Form
-          formValues={formValues}
-          setFormValues={setFormValues}
-          setFormComplete={setFormComplete}
-          handleSubmit={handleSubmit}
-        />
-      );
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setFormComplete((prev) => !prev);
-
-    //reset form if formComplete is true
-    if (formComplete) {
-      setFormValues({
-        cardNumber: "",
-        cardHolder: "",
-        cardExpiry: {
-          month: "",
-          year: "",
-        },
-        cardCVC: "",
-      });
-    }
-  };
+  const [formValues, setFormValues] = React.useState(FormInitialValues);
 
   return (
     <div className="App">
@@ -63,7 +27,7 @@ function App() {
           <BackCard cardCVC={formValues.cardCVC} />
           <FrontCard formValues={formValues} />
         </div>
-        {renderForm()}
+        <Form formValues={formValues} setFormValues={setFormValues} />
       </div>
     </div>
   );

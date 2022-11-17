@@ -10,6 +10,17 @@
   margin-top: 50px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.formContainer form {
+  width: 100%;
+}
+
 .formContainer--input {
   display: flex;
   flex-direction: column;
@@ -86,8 +97,10 @@ input:focus {
   }
 
   .formContainer form {
-    width: 400px;
     margin-top: 50px;
-    margin-left: 100px;
+  }
+
+  .content {
+    width: 50%;
   }
 }
